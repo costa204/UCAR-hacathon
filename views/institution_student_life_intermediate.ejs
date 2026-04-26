@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= typeof title !== 'undefined' ? title : 'Vie Étudiante' %></title>
+    
+    <link rel="icon" type="image/png" href="/images/logo-ucar.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+
+    <header>
+        <a href="/" class="logo">
+            <img src="/images/logo-ucar.png" alt="Logo Université de Carthage">
+        </a>
+        <nav class="nav-links">
+            <a href="/" class="nav-item">ACCUEIL</a>
+            <a href="/about" class="nav-item">À PROPOS</a>
+            <a href="/programmes" class="nav-item">PROGRAMMES ACADÉMIQUES</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">INSTITUTION</a>
+                <div class="dropdown-content">
+                    <a href="/institution_academic_intermediate">ACADÉMIQUES</a>
+                    <a href="/institution_student_life_intermediate">VIE ÉTUDIANTE</a>
+                    <a href="/research">EXCELLENCE EN RECHERCHE</a>
+                    <a href="/partnerships">PARTENARIATS MONDIAUX</a>
+                </div>
+            </div>
+            <a href="/news" class="nav-item">ACTUALITÉS</a>
+        </nav>
+        <div class="right-nav">
+            <a href="/login" class="log-in">SE CONNECTER</a>
+        </div>
+    </header>
+
+    <div class="intermediate-container">
+        <h2 class="page-title">Vie Étudiante</h2>
+        <p class="page-subtitle">Gérez l'engagement, les clubs et les événements du campus</p>
+        
+        <div class="action-cards">
+            <a href="/request-club" class="action-card">
+                <div class="card-icon">🤝</div>
+                <h3>Création de Club</h3>
+                <p>Soumettez une demande pour fonder un nouveau club ou association étudiante.</p>
+            </a>
+
+            <a href="/request-event" class="action-card">
+                <div class="card-icon">🎉</div>
+                <h3>Demande d'Événement</h3>
+                <p>Proposez, planifiez et organisez des événements sur le campus.</p>
+            </a>
+
+            <a href="/request-permission" class="action-card">
+                <div class="card-icon">📋</div>
+                <h3>Autorisations</h3>
+                <p>Demandez des permissions pour l'utilisation d'espaces, de matériel ou de sorties.</p>
+            </a>
+
+            <a href="/student-life-analytics" class="action-card primary-card">
+                <div class="card-icon">📊</div>
+                <h3>Analyser</h3>
+                <p>Consultez les statistiques d'engagement étudiant et d'impact des événements.</p>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

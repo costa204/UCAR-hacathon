@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title><%= typeof title !== 'undefined' ? title : 'Gestion Académique' %></title>
+    
+    <link rel="icon" type="image/png" href="/images/logo-ucar.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+
+    <header>
+        <a href="/" class="logo">
+            <img src="/images/logo-ucar.png" alt="Logo Université de Carthage"> </a>
+        <nav class="nav-links">
+            <a href="/" class="nav-item">ACCUEIL</a>
+            <a href="/about" class="nav-item">À PROPOS</a>
+            <a href="/programmes" class="nav-item">PROGRAMMES ACADÉMIQUES</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">INSTITUTION</a>
+                <div class="dropdown-content">
+                    <a href="/institution_academic_intermediate">ACADÉMIQUES</a>
+                    <a href="/student-life">VIE ÉTUDIANTE</a>
+                    <a href="/research">EXCELLENCE EN RECHERCHE</a>
+                    <a href="/partnerships">PARTENARIATS MONDIAUX</a>
+                </div>
+            </div>
+            <a href="/news" class="nav-item">ACTUALITÉS</a>
+        </nav>
+        <div class="right-nav">
+            <a href="/login" class="log-in">SE CONNECTER</a>
+        </div>
+    </header>
+
+    <div class="intermediate-container">
+        <h2 class="page-title">Gestion Académique</h2>
+        <p class="page-subtitle">Veuillez sélectionner une action pour continuer</p>
+        
+        <div class="action-cards">
+            <a href="/insert-attendance" class="action-card">
+                <div class="card-icon">📅</div>
+                <h3>Insérer les Présences</h3>
+                <p>Enregistrez les présences et absences quotidiennes des étudiants.</p>
+            </a>
+
+            <a href="/insert-results" class="action-card">
+                <div class="card-icon">📝</div>
+                <h3>Insérer les Résultats</h3>
+                <p>Saisissez les notes, les scores d'examens et les évaluations.</p>
+            </a>
+
+            <a href="/analytics" class="action-card primary-card">
+                <div class="card-icon">📊</div>
+                <h3>Analyser</h3>
+                <p>Consultez les taux de réussite, l'assiduité et la progression.</p>
+            </a>
+        </div>
+    </div> </body>
+</html>

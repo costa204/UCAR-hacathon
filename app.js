@@ -22,6 +22,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+// 🚀 NEW: Here is the "Traffic Cop" for your intermediate page!
+app.get('/institution_academic_intermediate', function(req, res) {
+  res.render('institution_academic_intermediate');
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

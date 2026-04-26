@@ -279,3 +279,100 @@ header {
     letter-spacing: -1.5px;
     color: #0A1128;
 }
+/* =========================================================
+   SHARED INTERMEDIATE CARDS TEMPLATE
+   (Use this for Academics, Student Life, etc.)
+   ========================================================= */
+
+.intermediate-container {
+    padding: 80px 5%;
+    text-align: center;
+    background-color: #F8F9FA;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intermediate-container .page-title {
+    font-size: 42px;
+    font-weight: 900;
+    color: #0A1128;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+
+.intermediate-container .page-subtitle {
+    color: #42526E;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.action-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+}
+
+/* Base Card Style */
+.action-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 50px 30px;
+    width: 320px;
+    text-decoration: none;
+    color: #172B4D;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.action-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 82, 204, 0.12);
+    border-color: #0052CC;
+}
+
+.action-card .card-icon {
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+
+.action-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #0A1128;
+    font-weight: 800;
+}
+
+.action-card p {
+    font-size: 15px;
+    color: #42526E;
+    line-height: 1.6;
+}
+
+/* The Primary Card - Styled to stand out (e.g., Analytics) */
+.action-card.primary-card {
+    background: linear-gradient(135deg, #0A1128 0%, #172B4D 100%);
+    color: white;
+    box-shadow: 0 8px 25px rgba(10, 17, 40, 0.3);
+}
+
+.action-card.primary-card h3 {
+    color: #ffffff;
+}
+
+.action-card.primary-card p {
+    color: #A0AABF;
+}
+
+.action-card.primary-card:hover {
+    border-color: #FFC400; /* UCAR yellow highlight on hover */
+    box-shadow: 0 15px 35px rgba(10, 17, 40, 0.4);
+}
